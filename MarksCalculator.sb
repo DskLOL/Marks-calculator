@@ -1,0 +1,20 @@
+TextWindow.Write("Enter the total marks")
+Marks = TextWindow.ReadNumber()
+If(Marks > 75) Then
+  Grade = "A+"
+ElseIf(Marks = 75) Then
+  Grade = "A"
+ElseIf(Marks > 60) Then
+  Grade = "B"
+ElseIf(Marks = 60) Then
+  Grade = "B"
+ElseIf(Marks < 60-55) Then
+  Grade = "C"
+ElseIf(Marks < 55-50) Then
+  Grade = "D"
+ElseIf(Marks < 50-40) Then
+  Grade = "F"
+ElseIf(Marks < 30) Then
+  Grade = "Uh oh, looks like you failed. Go and study and the give the Exam Again"
+EndIf
+  TextWindow.WriteLine("The grade student achieved is = " + Grade) 
